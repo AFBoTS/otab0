@@ -433,17 +433,17 @@ function tdcli_update_callback(data)
 					end, nil)
 					local contacts = redis:get("botBOT-IDcontacts")
 					local text = [[
-<i>📈 وضعیت و آمار تبلیغ گر 📊</i>
+<i>📊📊📊📊📊</i>
           
-<code>👤 گفت و گو های شخصی : </code>
+<code>پیویا</code>
 <b>]] .. tostring(usrs) .. [[</b>
-<code>👥 گروها : </code>
+<code>گروه</code>
 <b>]] .. tostring(gps) .. [[</b>
-<code>🌐 سوپر گروه ها : </code>
+<code>ســــوپر گــروها</code>
 <b>]] .. tostring(sgps) .. [[</b>
-<code>📖 مخاطبین دخیره شده : </code>
+<code>کانتکت های سیو شده</code>
 <b>]] .. tostring(contacts)..[[</b>
-<code>📂 لینک های ذخیره شده : </code>
+<code>لینکایی که سیو شده</code>
 <b>]] .. tostring(links)..[[</b>
 ]]
 					return send(msg.chat_id_, 0, text)
@@ -567,7 +567,7 @@ function tdcli_update_callback(data)
 							}, dl_cb, nil)
 						end	
 					end
-					return send(msg.chat_id_, msg.id_, "<i>کاربر مورد نظر به تمام گروه های من دعوت شد</i>")
+					return send(msg.chat_id_, msg.id_, "<i>اد شد😬😬</i>")
 				elseif (text:match("^(انلاین)$") and not msg.forward_info_)then
 					return tdcli_function({
 						ID = "ForwardMessages",
