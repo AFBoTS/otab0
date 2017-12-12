@@ -435,13 +435,12 @@ function tdcli_update_callback(data)
 					local text = [[          
 pv
 ]] .. tostring(usrs) .. [[
-تعداد گروه عضوم
+<b>تعداد گروه عضوم</b>
 ]] .. tostring(gps) .. [[
-تعداد سوپرگروه عضوم
+<b>تعداد سوپرگروه عضوم</b>
 ]] .. tostring(sgps) .. [[
- تعداد
-]] .. tostring(links)..[[
-کردم 
+<b>تعداد لینک سیو کردم</b>
+]] .. tostring(links)..[[ 
 ]]
 					return send(msg.chat_id_, 0, text)
 				elseif (text:match("^(ارسال به) (.*)$") and msg.reply_to_message_id_ ~= 0) then
